@@ -1,9 +1,10 @@
 import { Card } from "../elements/Card"
 
 export const Projects = () => {
+    const wording = "Currently wandering further in the sea of computer science. Here are my top picks ;)"
     return (
         <div className="min-h-screen w-full p-48 flex-col space-y-24">
-            <p className="text-center"> Currently wandering further in the sea of computer science. Here's my top picks ;)</p>
+            <p className="text-center"> {wording} </p>
             {/* <img src="educare.png" alt="educare" /> */}
             <div className="grid grid-cols-2 gap-6 place-content-evenly">
                 <Card 
