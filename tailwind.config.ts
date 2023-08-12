@@ -1,20 +1,94 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        raisin_black: {
+          DEFAULT: "#161628",
+          100: "#040408",
+          200: "#090910",
+          300: "#0d0d18",
+          400: "#111120",
+          500: "#161628",
+          600: "#363661",
+          700: "#55559b",
+          800: "#8b8bbf",
+          900: "#c5c5df",
+        },
+        federal_blue: {
+          DEFAULT: "#040F62",
+          100: "#010314",
+          200: "#020627",
+          300: "#02093b",
+          400: "#030c4e",
+          500: "#040f62",
+          600: "#071bb0",
+          700: "#142ef5",
+          800: "#6274f8",
+          900: "#b1b9fc",
+        },
+        true_blue: {
+          DEFAULT: "#2A68CD",
+          100: "#081529",
+          200: "#112951",
+          300: "#193e7a",
+          400: "#2153a3",
+          500: "#2a68cd",
+          600: "#4f85db",
+          700: "#7ba3e4",
+          800: "#a7c2ed",
+          900: "#d3e0f6",
+        },
+        medium_slate_blue: {
+          DEFAULT: "#8573CF",
+          100: "#171030",
+          200: "#2d2160",
+          300: "#443190",
+          400: "#5b43be",
+          500: "#8573cf",
+          600: "#9d8fd9",
+          700: "#b6abe2",
+          800: "#cec7ec",
+          900: "#e7e3f5",
+        },
+        pink_lavender: {
+          DEFAULT: "#E0B4E3",
+          100: "#39163c",
+          200: "#722c77",
+          300: "#ab42b3",
+          400: "#c879cd",
+          500: "#e0b4e3",
+          600: "#e6c3e9",
+          700: "#edd2ee",
+          800: "#f3e1f4",
+          900: "#f9f0f9",
+        },
+        dutch_white: {
+          DEFAULT: "#E8D7B3",
+          100: "#403113",
+          200: "#7f6326",
+          300: "#bf9439",
+          400: "#d6b775",
+          500: "#e8d7b3",
+          600: "#ede0c3",
+          700: "#f2e8d2",
+          800: "#f6efe1",
+          900: "#fbf7f0",
+        },
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;
