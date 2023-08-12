@@ -19,8 +19,8 @@ export const Button: React.FC<ButtonProps> = ({
         className={
           "cursor-pointer w-fit px-6 py-3 rounded-xl" +
           (filled
-            ? " bg-white text-raisin_black font-bold"
-            : " text-white border-2 border-white")
+            ? " bg-white hover:bg-true_blue text-raisin_black font-bold"
+            : " border-2 border-white hover:border-true_blue text-white hover:text-true_blue")
         }
       >
         {children}
