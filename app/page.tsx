@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex min-h-screen min-w-screen flex-col items-center justify-between bg-raisin_black-400 font-mono">
       <Landing />
-      <Awards />
+      {/* <Awards /> */}
       <Projects />
       <Contact />
     </main>
