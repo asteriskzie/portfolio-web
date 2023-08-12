@@ -8,9 +8,11 @@ export const Projects = () => {
             {/* <img src="educare.png" alt="educare" /> */}
             <div className="grid grid-cols-2 gap-6 place-content-evenly">
                 <Card 
-                    imageName="educare.png" 
-                    title="Project 1" 
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat sit amet odio et efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
+                    imageName="giphy.png" 
+                    title="Recreate GIPHY Website" 
+                    href="https://bright-elf-d07e66.netlify.app/"
+                    target="blank"
+                    description="Mimic GIPHY website using GIPHY's API and Tailwind CSS for styling"
                 />
                 <Card 
                     imageName="educare.png" 
