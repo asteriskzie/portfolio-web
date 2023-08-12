@@ -1,12 +1,16 @@
 import Image from 'next/image'
-import { About } from './components/modules/About'
+import { Awards } from './components/modules/Awards'
 import { Landing } from './components/modules/Landing'
+import { Projects } from './components/modules/Projects'
+import { Contact } from './components/modules/Contact'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen min-w-screen flex-col items-center justify-between bg-raisin_black">
+    <main className="flex min-h-screen min-w-screen flex-col items-center justify-between bg-raisin_black-400 font-mono">
       <Landing />
-      <About />
+      <Awards />
+      <Projects />
+      <Contact />
     </main>
   )
 }
