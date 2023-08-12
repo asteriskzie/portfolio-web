@@ -15,22 +15,12 @@ export const Projects = () => {
                     description="Mimic GIPHY website using GIPHY's API and Tailwind CSS for styling"
                 />
                 <Card 
-                    imageName="educare.png" 
-                    title="Project 1" 
-                    description="this is also a project"
+                    imageName="personal-web.png" 
+                    title="Personal Website" 
+                    href="https://esters-asdfghjkl.netlify.app/"
+                    target="blank"
+                    description="A past personal website project :D Ada fitur admin tapi ga pake backend gg ga"
                 />
-                <Card 
-                    imageName="educare.png" 
-                    title="Project 1" 
-                    description="This is a project"
-                />
-                <Card 
-                
-                    imageName="educare.png" 
-                    title="Project 1" 
-                    description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus consequat sit amet odio et efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. "
-                />
-
             </div>
         </div>
     )
