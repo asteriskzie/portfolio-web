@@ -1,20 +1,30 @@
-import React, { ReactNode } from 'react'
+import React, { ReactNode } from "react";
 
 interface ButtonProps {
-    children: ReactNode; 
-    filled?: boolean;
+  children: ReactNode;
+  filled?: boolean;
+  href?: string;
+  target?: string;
 }
 
-export const Button: React.FC<ButtonProps> = ({children, filled=true, ...attributes}) => {
-    let buttonClassName="cursor-pointer w-fit px-6 py-3 flex place-content-center rounded-xl "
-    if (filled) {
-        buttonClassName+="bg-white text-raisin_black font-bold"
-    } else {
-        buttonClassName+="text-white border-2 border-white "
-    }
-    return (
-        <div className={buttonClassName}>
-            <button>{children}</button>
-        </div>
-    )
-}
+export const Button: React.FC<ButtonProps> = ({
+  children,
+  filled = true,
+  href = "", 
+  target="",
+}) => {
+  return (
+    <a href={href} target={target}>
+      <button
+        className={
+          "cursor-pointer w-fit px-6 py-3 rounded-xl" +
+          (filled
+            ? " bg-white text-raisin_black font-bold"
+            : " text-white border-2 border-white")
+        }
+      >
+        {children}
+      </button>
+    </a>
+  );
+};
