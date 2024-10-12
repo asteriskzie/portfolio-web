@@ -6,7 +6,7 @@ import { Contact } from './components/modules/Contact'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen min-w-screen flex-col items-center justify-between bg-raisin_black-400 font-mono">
+    <main className="flex min-h-screen min-w-screen flex-col items-center justify-between bg-raisin_black-400 font-mono text-white">
       <Landing />
       {/* <Awards /> */}
       <Projects />
